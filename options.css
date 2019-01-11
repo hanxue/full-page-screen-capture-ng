@@ -1,0 +1,146 @@
+body.options {
+  background: #fff;
+}
+body.options p {
+  margin-bottom: 1em;
+}
+.sub-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+.sub-header h2 {
+  margin: 0;
+}
+.sub-header-push {
+  display: block;
+  height: 70px;
+  margin-bottom: 30px;
+}
+#content .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#content #settings-container {
+  padding-bottom: 0;
+}
+#content #perm-settings-container {
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+.options-list {
+  margin-bottom: 60px;
+}
+.options-elt {
+  display: block;
+  padding: 20px 15px;
+  margin: 0 -15px;
+  background: #f3f3f3;
+}
+.options-elt:nth-child(2n) {
+  background: #fff;
+}
+.options-elt:after {
+  content: '';
+  display: block;
+  clear: both;
+  width: 0;
+  height: 0;
+}
+.options-elt .options-ctrl {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  max-width: 400px;
+  padding-right: 15px;
+}
+.options-elt .help {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 15px;
+  display: block;
+  color: #555;
+}
+.options-elt .help .msg {
+  display: block;
+  color: #8a6d3b;
+}
+.options-elt .flex-wrapper {
+  display: flex;
+}
+.options-elt .flex-wrapper label {
+  box-sizing: border-box;
+  width: 60%;
+  padding-right: 20px;
+}
+.options-elt .flex-wrapper input,
+.options-elt .flex-wrapper select {
+  box-sizing: border-box;
+  width: 40%;
+}
+.options-elt label {
+  display: inline-block;
+  line-height: 18px;
+  font-weight: 700;
+}
+.options-elt label input {
+  margin-right: 5px;
+  margin-left: 0;
+  vertical-align: text-bottom;
+}
+.options-elt.type-checkbox input {
+  float: left;
+}
+.notif,
+.options-elt.type-checkbox .label-text {
+  display: block;
+  margin-left: 20px;
+}
+.notif {
+  box-sizing: border-box;
+  background: #ffd;
+  border-radius: 10px;
+  padding: 0 1em;
+  line-height: 30px;
+}
+#error-container .error {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.perm-header .arrow {
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 0.95em;
+  vertical-align: top;
+}
+#perm-content {
+  display: none;
+}
+#perm-content p {
+  margin-bottom: 1em;
+}
+.perm-toggle {
+  display: block;
+}
+.perm-row {
+  margin-bottom: 1em;
+}
+.cb-row .cb-input {
+  float: left;
+  margin-left: 0;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+  z-index: 1;
+}
+.cb-row .cb-text {
+  font-weight: 700;
+}
+.cb-row .cb-help,
+.cb-row .cb-text {
+  display: block;
+  margin-left: 20px;
+}

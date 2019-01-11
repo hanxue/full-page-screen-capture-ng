@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Screen Capture Result</title>
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="capture.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="left">Full Page Screen Capture NG</h1>
+        <div class="right">
+          <a
+            class="left btn btn-report global-btn"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="btn-report"
+          >
+            <span class="pe-7s-flag"></span>
+            <span class="tooltip">Report issue</span>
+          </a>
+          <a class="left btn btn-trash img-btn" href="#" id="btn-trash">
+            <span class="pe-7s-trash"></span>
+            <span class="tooltip">Delete image</span>
+          </a>
+          <a
+            class="left btn btn-expand img-btn"
+            href="#"
+            id="btn-expand"
+            style="display:none"
+          >
+            <span class="pe-7s-expand1"></span>
+            <span class="tooltip">View raw image</span>
+          </a>
+          <a
+            class="left btn btn-downloadpdf img-btn"
+            href="#"
+            id="btn-downloadpdf"
+          >
+            <span class="icon icon-download-pdf"></span>
+            <span class="tooltip">Download PDF</span>
+          </a>
+          <a class="left btn btn-download img-btn" href="#" id="btn-download">
+            <span class="icon icon-download-image"></span>
+            <span class="tooltip"
+              >Download image <span class="image-type"></span
+            ></span>
+          </a>
+          <a
+            class="left btn btn-history btn-nav"
+            data-href="capture.html"
+            href="#"
+            id="btn-history"
+          >
+            <span class="pe-7s-timer"></span>
+            <span class="tooltip">History</span>
+          </a>
+          <a
+            class="left btn btn-settings btn-nav"
+            data-href="options.html"
+            href="#"
+            id="btn-settings"
+          >
+            <span class="pe-7s-settings"></span>
+            <span class="tooltip">Options</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div id="content">
+      <div id="wrap">
+        <div id="main-info" class="section">
+          <p>
+            The best and safest way to capture a screenshot of an entire web
+            page.
+          </p>
+        </div>
+        <div id="image" class="section"></div>
+        <div style="clear:both;height:0;width:0;overflow:hidden"></div>
+        <div class="ctrls" id="img-ctrls">
+          <button class="nostyle zoom-btn zoom-out">
+            <span class="sr-only">Zoom out</span>
+            <span class="pe-7s-less"></span>
+          </button>
+          <span class="zoom-amount">Zoom</span>
+          <button class="nostyle zoom-btn zoom-in">
+            <span class="sr-only">Zoom in</span>
+            <span class="pe-7s-plus"></span>
+          </button>
+        </div>
+        <div class="history section" id="history"></div>
+        <div class="error-wrap section" id="error-wrap">
+          <div class="error" id="error">
+            <a class="close" href="#">
+              <span class="pe-7s-close"></span>
+              <span class="sr-only">Close</span>
+            </a>
+            <h3 id="error-title"></h3>
+            <p id="error-body"></p>
+            <p id="error-status"></p>
+            <div id="error-buttons" class="clearfix">
+              <button class="close">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="how-is-it" class="how-is-it hide">
+      <div class="hit-step hit-step-first">
+        Are you enjoying this extension?
+        <a href="#" class="how-like for-step box" data-for="hit-like">
+          <span role="img" aria-label="happy face">😊</span> yes!
+        </a>
+        <a href="#" class="how-dislike for-step box" data-for="hit-dislike">
+          <span role="img" aria-label="sad face">😕</span> not really
+        </a>
+        &nbsp;
+      </div>
+      <div id="hit-like" class="hit-step">
+        <br />
+        Hooray <span role="img" aria-label="tada">🎉</span> This extension takes
+        a lot of work to maintain. It’s really meaningful to hear that you find
+        it useful! <br /><br />
+        Might you consider taking a minute to rate it in the Webstore?
+        <br /><br />
+        <div class="clearfix">
+          <a
+            class="dismiss"
+            href="https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl/reviews?hl=en-US"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-went-out="true"
+          >
+            Take me to the Webstore!
+          </a>
+          &nbsp; &nbsp;
+          <a href="#" class="dismiss light" data-went-out="false">
+            No, thanks.
+          </a>
+        </div>
+        <br />
+      </div>
+      <div id="hit-dislike" class="hit-step">
+        <br />
+        Sorry <span role="img" aria-label="sad face">😟</span> <br /><br />
+        Would you like to report any issues you’re experiencing, so we can
+        improve this extension together? <br /><br />
+        <div class="clearfix">
+          <a
+            class="dismiss"
+            id="hit-report-link"
+            href="https://screencapture.mrcoles.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-went-out="true"
+          >
+            Report issue.
+          </a>
+          &nbsp; &nbsp;
+          <a href="#" class="dismiss" data-went-out="false"> No, thanks. </a>
+        </div>
+        <br />
+      </div>
+      <button class="close">
+        <span class="pe-7s-close"></span> <span class="sr-only">close</span>
+      </button>
+    </div>
+    <script src="capture.js"></script>
+  </body>
+</html>
