@@ -1,3 +1,7 @@
+Full Page Screen Capture NG
+===========================
+This is a fork of the [Full Page Screen Capture](https://github.com/mrcoles/full-page-screen-capture-chrome-extension) project. The source code for the upstream project has not been updated since 1.0.1 and there are major differences between the Chrome Webstore extension and the source code.
+
 Full Page Screen Capture
 ========================
 
@@ -14,6 +18,8 @@ For development:
 5. Select the folder for this app
 
 From the webstore:
+
+This fork is not yet available on Chrome Webstore. You can install the upstream extension below.
 
 Find the [Full Page Screen Capture App](https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl) in the Chrome Webstore and click install. (NOTE: the webstore version is now running on a private branch of this repo and will have more updates.)
 
